@@ -26,9 +26,7 @@ $(document).ready(function () {
             inputExtra.prop('disabled', true).prop('required', false).val('');
         }
     });
-
-$(document).ready(function() {
-
+    
     const opcoesDependentes = {
         'Clinico Geral': [
             { valor: 'CH', texto: 'Dr. Carlos Henrique' },
@@ -143,8 +141,6 @@ $(document).ready(function() {
 
     // Dispara o evento 'change' ao carregar, para garantir que o segundo select esteja escondido
     $('#Especialidade').trigger('change');
-});
-
 });
 
 
