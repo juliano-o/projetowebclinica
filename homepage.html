@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="projetoclinicaCSS.css">
+    <title>Página Inicial - Clínica Saúde & Bem-estar</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação PADRONIZADO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+        <div class="container">
+            <!-- Link da marca sempre leva para a homepage -->
+            <a class="navbar-brand" href="homepage.html">Clínica Saúde & Bem-estar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <!-- Link "Início" ATIVO nesta página -->
+                        <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+                    </li>
+                    <li class="nav-item">  
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link "Sobre Nós" corrigido para apontar para a âncora na homepage -->
+                        <a class="nav-link" href="homepage.html#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-black ms-lg-2" href="agendamento.html">Agendar Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Conteúdo Principal Simples -->
+    <main class="container mt-4">
+        
+        <!-- Seção "Sobre Nós" (para o link da navegação) -->
+        <section id="sobre" class="py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-5">Bem-vindo à Clínica Saúde & Bem-estar</h1>
+                    <p class="lead">Cuidar da sua saúde é a nossa prioridade. Oferecemos um atendimento humanizado e profissionais qualificados em diversas especialidades.</p>
+                    <p>Nossa missão é proporcionar um serviço de saúde acessível e de alta qualidade, utilizando infraestrutura moderna para garantir o melhor diagnóstico e tratamento.</p>
+                    <a href="servicos.html" class="btn btn-primary btn-lg">Nossos Serviços</a>
+                    <a href="agendamento.html" class="btn btn-outline-secondary btn-lg">Agendar Consulta</a>
+
+                    <!-- Informações de Contato Adicionais -->
+                    <div class="mt-5 pt-3 border-top">
+                        <p class="lead mb-4">Entre em contato conosco:</p>
+                        <h5 class="mb-1"><strong>Telefone:</strong> (95) 99123-4567</h5>
+                        <h5><strong>Email:</strong> contato@saudebemestar.com.br</h5>
+                    </div>
+                    <!-- Fim das Informações de Contato -->
+
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0">
+                    <img src="https://placehold.co/600x400/0d6efd/white?text=Clínica+Moderna" class="img-fluid rounded shadow" alt="Interior da clínica">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Rodapé PADRONIZADO -->
+    <footer class="bg-dark text-white text-center py-3 footer">
+        <div class="container">
+            <p class="m-0">&copy; 2024 Clínica Saúde & Bem-estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

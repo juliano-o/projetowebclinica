@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="projetoclinicaCSS.css">
+    <title>Serviços - Clínica Saúde & Bem-estar</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação PADRONIZADO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">Clínica Saúde & Bem-estar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Início</a>
+                    </li>
+                    <li class="nav-item">  
+                        <!-- Link "Serviços" ATIVO nesta página -->
+                        <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link "Sobre Nós" corrigido -->
+                        <a class="nav-link" href="homepage.html#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-black ms-lg-2" href="agendamento.html">Agendar Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Alerta Bootstrap (movido para DEPOIS da navegação fixa) -->
+    <div class="alert alert-info text-center mb-0" role="alert">
+        💉 Campanha de vacinação contra a gripe disponível durante todo o mês de outubro!
+    </div>
+
+    <!-- Conteúdo principal -->
+    <!-- Removida a classe main-content se o alerta não for fixo -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Nossos Serviços</h1>
+        <div class="row g-4">
+
+            <!-- Clínico Geral -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Clínico Geral</h4>
+                        <p>Atendimento médico geral para adultos e crianças.</p>
+                        <ul>
+                            <li><strong>Dr. Carlos Henrique</strong> — (95) 91234-5678</li>
+                            <li><strong>Dra. Marina Lopes</strong> — (95) 93456-7890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fisioterapia -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Fisioterapia</h4>
+                        <p>Tratamentos personalizados para reabilitação e bem-estar físico.</p>
+                        <ul>
+                            <li><strong>Dr. Felipe Ramos</strong> — (95) 94567-1234</li>
+                            <li><strong>Dra. Camila Nogueira</strong> — (95) 95678-4321</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nutricionista -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Nutricionista</h4>
+                        <p>Planos alimentares personalizados e acompanhamento nutricional.</p>
+                        <ul>
+                            <li><strong>Dra. Paula Mendes</strong> — (95) 96543-2100</li>
+                            <li><strong>Dr. Rafael Tavares</strong> — (95) 97432-1099</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exames Laboratoriais -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Exames Laboratoriais</h4>
+                        <p>Realizamos diversos tipos de exames com equipamentos modernos e resultados rápidos.</p>
+                        <ul>
+                            <li>Hemograma completo</li>
+                            <li>Glicemia em jejum</li>
+                            <li>Colesterol total e frações</li>
+                            <li>Triglicerídeos</li>
+                            <li>Exame de urina</li>
+                            <li>Exame de fezes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outros serviços ... (mantidos como estavam) -->
+             <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Bioimpedância</h4>
+                        <p>Análise detalhada da composição corporal (massa muscular, gordura e água corporal).</p>
+                        <p><strong>Valor:</strong> R$ 20,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Vacinas</h4>
+                        <p>Aplicação de vacinas com equipe especializada, conforme o calendário nacional de imunização.</p>
+                        <ul>
+                            <li>Gripe (Influenza)</li>
+                            <li>Hepatite A e B</li>
+                            <li>Tétano e Difteria (dT)</li>
+                            <li>HPV</li>
+                            <li>Tríplice Viral (Sarampo, Caxumba e Rubéola)</li>
+                            <li>Febre Amarela</li>
+                            <li>Meningocócica ACWY</li>
+                            <li>COVID-19</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Psicologia</h4>
+                        <p>Atendimento psicológico individual e em grupo, promovendo o equilíbrio emocional e o bem-estar mental.</p>
+                        <ul>
+                            <li><strong>Dra. Larissa Cunha</strong> — (95) 93210-4455</li>
+                            <li><strong>Dr. Thiago Moreira</strong> — (95) 97765-3322</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Pediatria</h4>
+                        <p>Cuidados médicos voltados à saúde infantil, com acompanhamento preventivo e tratamento especializado.</p>
+                        <ul>
+                            <li><strong>Dra. Beatriz Souza</strong> — (95) 98876-1122</li>
+                            <li><strong>Dr. Ricardo Lima</strong> — (95) 98765-4433</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Cardiologia</h4>
+                        <p>Exames e acompanhamento de pacientes com doenças cardíacas e fatores de risco.</p>
+                        <ul>
+                            <li><strong>Dr. André Nascimento</strong> — (95) 95555-6677</li>
+                            <li><strong>Dra. Flávia Monteiro</strong> — (95) 95432-8899</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Dermatologia</h4>
+                        <p>Diagnóstico e tratamento de doenças da pele, cabelos e unhas, além de procedimentos estéticos dermatológicos.</p>
+                        <ul>
+                            <li><strong>Dra. Helena Prado</strong> — (95) 96644-2233</li>
+                            <li><strong>Dr. Lucas Fernandes</strong> — (95) 96789-5544</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Odontologia</h4>
+                        <p>Consultas e tratamentos odontológicos com foco em prevenção, estética e reabilitação oral.</p>
+                        <ul>
+                            <li><strong>Dra. Patrícia Martins</strong> — (95) 97890-2211</li>
+                            <li><strong>Dr. Henrique Duarte</strong> — (95) 97654-1199</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Fonoaudiologia</h4>
+                        <p>Avaliação e tratamento de distúrbios da comunicação, fala, voz e audição.</p>
+                        <ul>
+                            <li><strong>Dra. Joana Ribeiro</strong> — (95) 94321-7766</li>
+                            <li><strong>Dr. Pedro Azevedo</strong> — (95) 98777-6655</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé PADRONIZADO -->
+    <footer class="bg-dark text-white text-center py-3 footer">
+        <div class="container">
+            <p class="m-0">&copy; 2024 Clínica Saúde & Bem-estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

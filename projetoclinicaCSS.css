@@ -1,0 +1,14 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+    padding-bottom: 70px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Ajuste para o conteúdo principal começar abaixo do alerta */
+.main-content {
+    margin-top: 56px; /* Ajuste se o alerta for fixo, senão pode remover */
+}
