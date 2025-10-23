@@ -141,6 +141,18 @@ $(document).ready(function () {
 
     // Dispara o evento 'change' ao carregar, para garantir que o segundo select esteja escondido
     $('#Especialidade').trigger('change');
+
+    $('form').on('submit', function(event) {
+    const dataInput = $('#DataConsulta').val();
+    const dataConsulta = new Date(dataInput);
+
+    const hoje = new Date();
+    hoje.setHours(0, 0, 0, 0); 
+
+    if (dataConsulta < hoje) {
+        event.preventDefault();
+        alert('A data da consulta não pode ser anterior à data atual.');
+    }
 });
 
 
