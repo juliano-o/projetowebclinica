@@ -1,8 +1,7 @@
 $(document).ready(function () {
     // Máscaras
     $('#CPF').mask('000.000.000-00');
-
-    // Máscara Condicional para Telefone (celular e fixo)
+    
     var SPMaskBehavior = function (val) {
         return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
     };
@@ -93,24 +92,19 @@ $(document).ready(function () {
         ]
     };
 
-    // 2. LÓGICA PRINCIPAL
     $('#Especialidade').on('change', function() {
-        // Elementos que serão manipulados
+
         const valorSelecionado = $(this).val(); 
         const $divContainer = $('#EspecialidadePt2'); 
         const $selectSecundario = $('#Especialidade2'); 
 
-        // 3. Verifica se há opções disponíveis para o valor escolhido
         const opcoesParaAdicionar = opcoesDependentes[valorSelecionado];
 
         if (opcoesParaAdicionar && opcoesParaAdicionar.length > 0) {
-            // A) SE HOUVEREM OPÇÕES: Mostra a DIV e Popula o SELECT
-            
-            // 1. Limpa e adiciona o placeholder
+
             $selectSecundario.empty(); 
             $selectSecundario.append('<option value="" selected disabled>Selecione</option>');
             
-            // 2. Popula o select secundário com os dados
             $.each(opcoesParaAdicionar, function(i, item) {
                 $selectSecundario.append(
                     $('<option>', {
@@ -120,16 +114,12 @@ $(document).ready(function () {
                 );
             });
             
-            // 3. Habilita o select, torna obrigatório e exibe a DIV com animação
             $selectSecundario.prop('disabled', false).prop('required', true);
             $divContainer.slideDown(200);
-
         } else {
-            // B) SE NÃO HOUVEREM OPÇÕES OU A SELEÇÃO FOR INVÁLIDA (value="")
             
-            // 1. Esconde a DIV com animação
             $divContainer.slideUp(200, function() {
-                // 2. Limpa e desabilita o select após a animação terminar
+
                 $selectSecundario
                     .empty()
                     .append('<option value="" selected disabled>-- Escolha a Categoria primeiro --</option>')
@@ -138,8 +128,6 @@ $(document).ready(function () {
             });
         }
     });
-
-    // Dispara o evento 'change' ao carregar, para garantir que o segundo select esteja escondido
     $('#Especialidade').trigger('change');
 
     $('form').on('submit', function(event) {
